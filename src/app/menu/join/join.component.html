@@ -1,0 +1,8 @@
+<ns-action-bar title="Join the Family"></ns-action-bar>
+<StackLayout>
+    <Button text="The MERCH Page" 
+        class="btn btn-primary"
+        [nsRouterLink]="['/home', {outlets: { ClubOutlet: ['OurClub']}}]"
+        clearHistory]="true"
+    ></Button>
+</StackLayout>

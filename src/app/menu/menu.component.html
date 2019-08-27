@@ -1,0 +1,51 @@
+<ActionBar title="Best Laces Out"></ActionBar>
+
+<!--
+<GridLayout rows="3" columns="0">
+    <StackLayout row="0" orientation="vertical" borderWidth="2" (tap)="onHistoryTap()">
+        <ns-about-tab></ns-about-tab>
+    </StackLayout>
+
+    <StackLayout row="1" orientation="vertical" borderWidth="2" (tap)="onMerchTap()">
+        <ns-shop-tab></ns-shop-tab>  
+    </StackLayout> 
+
+    <StackLayout row="2" orientation="vertical" borderWidth="2" (tap)="onJoinTap()">    
+        <ns-join-tab></ns-join-tab>
+    </StackLayout>
+</GridLayout>
+-->
+
+
+
+<!-- Method 2 w/o TabView - ends in ERROR
+<StackLayout orientation="vertical" borderWidth="2" (tap)="onHistoryTap()">
+    <ns-about-tab></ns-about-tab>
+</StackLayout>
+
+<StackLayout orientation="vertical" borderWidth="2" (tap)="onMerchTap()">
+    <ns-shop-tab></ns-shop-tab>
+</StackLayout> 
+
+<StackLayout orientation="vertical" borderWidth="2" (tap)="onJoinTap()">
+    <ns-join-tab></ns-join-tab>
+</StackLayout>
+ 
+-->
+
+
+<TabView androidSelectedTabHighlightColor="#791F3C" selectedTabTextColor="#791F3C" tabBackgroundColor="#D3C6B4">
+    <StackLayout orientation="vertical" borderWidth="2" *tabItem="{title: 'OUR HISTORY'}" (tap)="onHistoryTap()">
+        <ns-about-tab></ns-about-tab>
+    </StackLayout>
+    <StackLayout orientation="vertical" borderWidth="2" *tabItem="{title: 'OUR MERCH'}" (tap)="onMerchTap()">
+        <ns-shop-tab></ns-shop-tab>
+    </StackLayout> 
+    <StackLayout orientation="vertical" borderWidth="2" *tabItem="{title: 'OUR CLUB'}" (tap)="onJoinTap()">
+        <ns-join-tab></ns-join-tab>
+    </StackLayout>       
+</TabView>
+
+
+
+

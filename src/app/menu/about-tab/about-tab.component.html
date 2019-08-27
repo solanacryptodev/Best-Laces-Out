@@ -1,0 +1,21 @@
+<ScrollView orientation="vertical" height="500">
+    <StackLayout orientation="vertical" backgroundColor="white">
+        <page-router-outlet name="HistoryOutlet"></page-router-outlet>
+        <Label text="This is Our History" id="ID1"></Label>
+        <Button height="50" 
+                width="200" 
+                backgroundColor="black" 
+                text="Who We Are" 
+                id="about-button"
+                [nsRouterLink]="['/home', { outlets: { HistoryOutlet:[ 'HistoryDetails' ]}} ]">
+        </Button>
+    </StackLayout>
+</ScrollView>
+
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+<ns-action-bar title="Knowledge of Us"></ns-action-bar>
+<StackLayout>
+    <Button text="The Knowledge Page" 
+        class="btn btn-primary"
+        [nsRouterLink]="['/home', { outlets: { HistoryOutlet: ['HistoryDetails'] } } ]"
+        [clearHistory]="true">
+    </Button>
+</StackLayout>
